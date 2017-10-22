@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
           <LoginForm />
+          Remain before stage 1 '24:00:00'
       </div>
     );
   }
