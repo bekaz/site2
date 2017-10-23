@@ -5,9 +5,10 @@ class Input extends Component {
     render () {
         return (
             <input 
-                type = "text" 
+                type = {this.props.InputType} 
                 placeholder="your text"
-                className = "Input">
+                className = "Input"                
+                >                                        
             </input> 
         )
     }

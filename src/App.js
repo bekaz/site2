@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 
-<<<<<<< HEAD
-=======
-import LoginForm from "./coponents/LoginForm/LoginForm"
->>>>>>> master
+import LoginForm from "./components/LoginForm/LoginForm"
+
+import {HashRouter, Route} from "react-router-dom";
 
 class App extends Component {
-  render() {
-    return (
+  render() {   
+    return ( 
+    <HashRouter>
       <div className="App">
-<<<<<<< HEAD
-    
-=======
-          <LoginForm />
-          Remain before stage 1 '24:00:00'
->>>>>>> master
-      </div>
+        <Route path='/' render={(props) => (<LoginForm />)}/>
+        <Route path='/q2' render={(props) => (<LoginForm />)}/>        
+      </div>      
+    </HashRouter>
     );
   }
 }

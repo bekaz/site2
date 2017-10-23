@@ -1,9 +1,9 @@
 .LoginForm {
     position: absolute;
     width: 350px;
-    height: 190px;
+    height: 130px;
     top: 50px;
     left: 50px;
-    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px lightblue;
     border-radius: 10px;
 }
