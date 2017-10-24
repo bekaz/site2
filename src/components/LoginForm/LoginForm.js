@@ -2,7 +2,8 @@ import React, {Component} from "react"
 import "./LoginForm.css"
 
 import Input from "../input/Input"
-import {Link, browserHistory} from "react-router-dom";
+
+import {Redirect} from "react-router-dom";
 
 class LoginForm extends Component {
     render() {
@@ -10,9 +11,9 @@ class LoginForm extends Component {
             <div className="LoginForm">
                 <Input InputType="text"/>
                 <Input InputType="password"/>
-                <button onClick={() => hashHistory.push('/q2')}>
-                     
-                </button>
+                <p>
+                  <Redirect to="/q1">LogIn Me</q1>
+                </p>
             </div>
         )
     }

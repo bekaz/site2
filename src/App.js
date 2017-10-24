@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import LoginForm from "./components/LoginForm/LoginForm"
+import LoginForm from "./components/LoginForm/LoginForm";
+import MainForm from "./components/MainForm/MainForm";
 
-import {HashRouter, Route} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 class App extends Component {
-  render() {   
-    return ( 
-    <HashRouter>
-      <div className="App">
-        <Route path='/' render={(props) => (<LoginForm />)}/>
-        <Route path='/q2' render={(props) => (<LoginForm />)}/>        
-      </div>      
-    </HashRouter>
+  render() {
+    return (
+      <Switch>
+        <Route exact path="/" component={LoginForm} />
+        <Route path="/q1" component={MainForm}/>
+      </Switch>
     );
   }
 }

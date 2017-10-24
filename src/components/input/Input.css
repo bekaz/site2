@@ -11,10 +11,10 @@ input[type="text"] {
 input[type="password"] {
     top: 60px;
 }
-button {
+button,p {
     position: absolute;
     width: 300px;
-    top: 100px;
+    top: 90px;
     left: 50%;
     margin-left: -150px;
     text-align:  center;
